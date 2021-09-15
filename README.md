@@ -2,11 +2,11 @@ Tested on Windows and Mac with Python 3.4+
 
 To run:
 
-	“python payment_engine.py transactions.csv > client_accounts.csv”
+	python payment_engine.py transactions.csv > client_accounts.csv
 
 To run and display debug information type:
 
-	“python payment_engine.py transactions.csv -d”
+	python payment_engine.py transactions.csv -d
 
 Summary:
 
