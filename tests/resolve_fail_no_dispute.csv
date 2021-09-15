@@ -1,0 +1,4 @@
+type,client,tx,amount
+deposit,8960,2,76790.1151
+withdrawal,8960,3,63366.9842
+resolve,8960,2,

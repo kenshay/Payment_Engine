@@ -1,0 +1,6 @@
+type,client,tx,amount
+deposit,8960,2,76790.1151
+withdrawal,8960,3,63366.9842
+deposit,8960,4,150
+deposit,8960,5,900
+dispute,8960,33,0
