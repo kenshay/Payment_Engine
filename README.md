@@ -1,4 +1,4 @@
-#Tested with Windows and Mac
+Tested with Windows and Mac
 
 To run:
 	“python payment_engine.py transactions.csv > client_accounts.csv”
