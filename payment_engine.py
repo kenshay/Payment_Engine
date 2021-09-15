@@ -133,7 +133,7 @@ class Payment_Engine_Class():
         # A withdraw is a debit to the client's asset account.
 
         self.debug_print('#######################################')
-        self.debug_print('Before Withdrawel-> ' + str(client_dict))
+        self.debug_print('Before Withdrawal-> ' + str(client_dict))
         if client_dict['available'] >= transaction_dict['amount']:
 
             # It should decrease the available and total funds of the client account A
@@ -145,19 +145,19 @@ class Payment_Engine_Class():
             self.check_data(client_dict['available'], client_dict['held'], client_dict['total'])
             if self.negatives_in_data(client_dict['available'], client_dict['held'], client_dict['total']) == False:
                 self.client_accounts_dict[transaction_dict['client']] = client_dict
-                self.debug_print('After  Withdrawel-> ' + str(client_dict))
+                self.debug_print('After  Withdrawal-> ' + str(client_dict))
             else:
                 self.debug_print(
                     "Negative Number Found! " + str(client_dict['available']) + ',' + str(
                         client_dict['held']) + ',' + str(
                         client_dict['total']) + " Skipping Transaction")
-                self.debug_print('After  Withdrawel-> ' + str(self.client_accounts_dict[transaction_dict['client']]))
+                self.debug_print('After  Withdrawal-> ' + str(self.client_accounts_dict[transaction_dict['client']]))
 
 
         else:
             # If a client does not have sufficient available funds the withdrawal should fail and the total amount of funds should not change.
-            self.debug_print('Inusufficiant funds! Skipping Transaction.')
-            self.debug_print('After  Withdrawel-> ' + str(client_dict))
+            self.debug_print('Insufficient funds! Skipping Transaction.')
+            self.debug_print('After  Withdrawal-> ' + str(client_dict))
 
 
 
