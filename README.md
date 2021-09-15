@@ -1,4 +1,4 @@
-Tested on Windows and Mac
+Tested on Windows and Mac with Python 3.4+
 
 To run:
 
