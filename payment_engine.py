@@ -406,7 +406,7 @@ class Payment_Engine_Class():
                 elif transaction_dict['type'] == 'chargeback':
                     self.chargeback(transaction_dict, client_dict)
                 else:
-                    raise Exception('Uknkown Type!')
+                    raise Exception('Unknown Type!')
 
         self.write_accounts_out()
 
